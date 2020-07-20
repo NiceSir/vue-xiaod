@@ -1,0 +1,87 @@
+.home {
+  // background-color: black;
+  .user {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px #999 solid;
+    align-items: center;
+    margin-bottom: 10px;
+    // justify-content: flex-start;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+    div {
+      p:nth-child(1) {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+      p:nth-child(2) {
+        color: #777;
+      }
+    }
+  }
+
+  .login_info {
+    p {
+      color: #777;
+      font-size: 14px;
+      line-height: 20px;
+      span {
+        margin-left: 20px;
+        color: #555;
+      }
+    }
+  }
+
+  //订单数据罗列
+  .num {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .el-card {
+      width: 32%;
+      margin-bottom: 10px;
+      /deep/ .el-card__body {
+        display: flex;
+        padding: 0;
+        .icon {
+          font-size: 30px;
+          width: 80px;
+          height: 80px;
+          color: #fff;
+          text-align: center;
+          line-height: 80px;
+          // height: 80px;
+        }
+        .detail {
+          flex: 1;
+          display: flex;
+          margin-left: 15px;
+          flex-direction: column;
+          justify-content: center;
+          p:nth-child(1) {
+            font-size: 28px;
+            margin-bottom: 10px;
+          }
+          p:nth-child(2) {
+            color: #777;
+            // text-align: center;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  
+  .echart {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .el-card {
+      width: 48%;
+    }
+  }
+}
